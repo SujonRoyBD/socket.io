@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import io from 'socket.io-client';
-const socket = io.connect('https://socket-io-ten-phi.vercel.app');
+const socket = io.connect('http://localhost:8000');
 
 function App() {
   const [msg, setMsg] = useState('')
